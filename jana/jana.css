@@ -1,0 +1,852 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    box-sizing: border-box;
+}
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    position: relative;
+    box-shadow: 0 4px 8px -4px teal;
+}
+
+
+.logo img {
+    width: 120px; 
+    display: block; 
+}
+
+
+.menu {
+    list-style: none; 
+    display: flex;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.menu li {
+    margin: 0 15px; 
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: teal;
+}
+.header-icons .fa-search {
+    color: #333; 
+    font-size: 20px; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.header-icons .fa-heart {
+    color: #333; 
+    font-size: 20px; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.header-icons .fa-search:hover,
+.header-icons .fa-heart:hover {
+    color: teal; 
+    transform: scale(1.2); 
+}
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  50px 10% ;
+    background: url('img/bg.png') no-repeat center center/cover;
+    background-color: #fff;
+}
+.welcome-text {
+    max-width: 45%;
+    margin-bottom: 20px;
+ 
+}
+.welcome-text h1 {
+    font-size: 2.5rem;
+    color: #000;
+    line-height: 1.3;
+  }
+
+.welcome-text h1 span {
+    color: #00bfa5;
+}
+
+.welcome-text p {
+    font-size: 1rem;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+
+.btn {
+    background-color: #00bfa5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+.btn:hover {
+    background-color: #009688;
+  }
+.welcome-image img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    /*margin-left: 160px;*/
+}
+.services{
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+}
+
+.services-box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.services-card{
+    text-align: center;
+    line-height: 1.8;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 0 8px darkcyan;
+    padding: 20px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.services-card i{
+    color: darkcyan;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+ h3{
+    margin-bottom: 10px;
+}
+
+.services-card p {
+    font-size: 14px; 
+    color: #555;
+    line-height: 1.6; 
+    margin: 0; 
+}
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    display: block; 
+
+}
+.about-text button {
+    background-color: #00bfa5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-text button:hover {
+    background-color: #009688;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.featured-books {
+  text-align: center;
+  margin: 20px;
+}
+
+.books-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px; 
+  padding: 10px 0;
+}
+
+.book {
+  flex: 0 0 180px; 
+  border: 1px solid black; 
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  position: relative; 
+  transition: box-shadow 0.3s ease;
+  height: auto; 
+}
+
+.book:hover {
+  box-shadow: 0 4px 8px #009688; 
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain; 
+}
+
+.book h3 {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.book p {
+  margin: 5px 0;
+}
+
+.book .genres {
+  color:#009688; 
+  font-weight: bold;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.book .price {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.book .old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 5px;
+}
+
+.book .learn-more {
+  margin-top: 8px; 
+  display: inline-block; 
+  padding: 6px 12px;
+  background-color: transparent; 
+  color: #009688; 
+  border: 1px solid #009688; 
+  cursor: pointer;
+  font-size: 12px; 
+  border-radius: 4px;
+}
+
+.book .learn-more:hover {
+  background-color: #e6f2ff; 
+}
+
+.scroll-arrow {
+  font-size: 24px;
+  text-decoration: none;
+  color: #009688; 
+  cursor: pointer;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.scroll-arrow:hover {
+  color: #009688; 
+}
+
+.books-container::-webkit-scrollbar {
+  height: 6px; 
+}
+
+.books-container::-webkit-scrollbar-thumb {
+  background-color:#009688; 
+}
+
+.books-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+.featured-books {
+    text-align: center;
+    margin: 20px;
+}
+
+.books-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.book {
+    flex: 0 0 180px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    height: 300px; 
+}
+
+.book:hover {
+    box-shadow: 0 4px 8px #009688;
+}
+
+.book img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: contain; 
+    margin-bottom: 10px;
+    background-color: #ffffff; 
+}
+
+.book h3 {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.book p {
+    margin: 5px 0;
+}
+
+.book .genres {
+    color: #009688;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book .price {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.book .old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 5px;
+}
+
+.book .learn-more {
+    margin-top: 8px;
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: transparent;
+    color:#009688;
+    border: 1px solid #009688;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px; /* تثبيت الزر بالأسفل */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.book .learn-more:hover {
+    background-color: #e6f2ff;
+}
+
+
+
+.books-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.books-container::-webkit-scrollbar-thumb {
+    background-color: #009688;
+}
+
+.books-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.Arrivals {
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 20px 0;
+}
+
+.Arrivals h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.Arrivals-box {
+    display: grid; 
+    grid-template-columns: repeat(5, minmax(200px, 1fr)); 
+    gap: 40px; 
+    justify-content: center; 
+    width: calc(100% - 100px); 
+    max-width: 1200px; 
+    padding: 20px; 
+    box-sizing: border-box;
+    margin: 50px auto; 
+}
+
+.Arrivals-box .arrivals-card {
+    width: 100%; 
+    max-width: 230px; 
+    height: auto; 
+    text-align: center;
+    padding: 15px; 
+    border: 1px solid slategrey;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2px auto;
+    transition: transform 0.3s ease;
+    background-color: white; 
+}
+
+.Arrivals-box .arrivals-card:hover {
+    transform: scale(1.05); 
+}
+
+.Arrivals-box .arrivals-card .arrivals-image img {
+    width: 100%; 
+    max-width: 180px; 
+    max-height: 200px; 
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+}
+
+.Arrivals-box .arrivals-card .arrivals-tag {
+    margin-top: 15px; 
+    font-size: 16px;
+    font-weight: bold; 
+}
+
+.Arrivals-box .arrivals-card .arrivals-icon i {
+    font-size: 20px;
+    color: #009688;
+    margin-right: 2px;
+}
+
+.Arrivals-box .arrivals-card .arrivals-btn {
+    display: inline-block;
+    margin-top: 15px; 
+    padding: 10px 20px; 
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #009688;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.Arrivals-box .arrivals-card .arrivals-btn:hover {
+    background-color: #009688;
+    color: white;
+}
+
+.reviews{
+
+    width: 100%;
+    height: 100vh;
+}
+
+.reviews h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 55px;
+    
+}
+
+.reviews .review-box{
+    width: 100%;
+    margin: 15px auto;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews .review-box .review-card{
+    width: 400px;
+    height: 320px;
+    box-shadow: 0 0 8px darkcyan;
+    padding: 15px;
+    margin: 0 12px;
+}
+.reviews .review-box .review-card i {
+    float: right;
+    font-size: 120px;
+    position: relative;
+    bottom: 20px;
+    color: #eaeaea ;
+}
+
+.reviews .review-box .review-card .card-top img{
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.reviews .review-box .review-card .card p{
+    margin: 15px 0 10px 7px;
+    text-align: justify;
+    line-height: 22px;
+    
+
+}
+
+.reviews .review-box .review-card .card  .review-icon i{
+    font-size: 16px;
+    float: left;
+    margin-top: 20px;
+    color: darkcyan;
+    padding: 0 1px;
+
+}
+.reviews h2 {
+    color: black; 
+    font-weight: bold; 
+     
+}
+
+.banner{
+    width: 100%;
+    height: 50vh;
+    background-image: url(picture/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px; 
+
+}
+
+.banner .banner-btn{
+    padding: 8px 12px;
+    background-color: darkcyan;
+    color: white;
+    position: relative;
+    top: 70%;
+    left: 7%;
+    text-decoration: none;
+
+}
+
+.blog{
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+}
+
+.blog h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.blog .blog-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog .blog-box .blog-card{
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.blog .blog-box .blog-card .blog-img{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.blog .blog-box .blog-card .blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog .blog-box .blog-card .blog-tag{
+    padding: 20px;
+}
+
+
+.blog .blog-box .blog-card .blog-tag h2{
+    color: darkcyan;
+    margin-left: 7px;
+}
+
+.blog .blog-box .blog-card .blog-tag p{
+    margin-top: 10px;
+    margin-left: 7px;
+    margin-right: 7px;
+    text-align: justify;
+    line-height: 23px;
+}
+
+.blog .blog-box .blog-card .blog-tag .blog-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: darkcyan;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    background: #eaeaea;
+
+}
+
+footer .footer-main{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+footer .footer-main .tag{
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+
+footer .footer-main .tag img{
+    width: 100px;
+
+}
+
+footer .footer-main .tag p{
+    width: 250px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+footer .footer-main .tag h1{
+    font-size: 20px;
+    margin: 25px 0;
+    color: black;
+}
+
+footer .footer-main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+
+
+}
+footer .footer-main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer-main .tag .search-bar{
+    width: 230px;
+    height: 30px;
+    background: rgb(202,202,202);
+    border-radius: 25px;
+}
+
+footer .footer-main .tag .search-bar input{
+    width: 200px ;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+footer .footer-main .tag .search-bar button{
+    padding: 10px 15px;
+    background: darkcyan;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: black;
+}
+
+footer .end span{
+    color: darkcyan;
+    font-weight: 600;
+}
+
+/* آيفون XR والأجهزة الأصغر */
+@media (max-width: 767px) {
+    .Reviews {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        margin-top: 30px; 
+    }
+    .Reviews h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .Reviews .review-box {
+        width: 100%;
+    }
+    .Reviews .review-box .review-card {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 8px #089da1;
+        padding: 20px;
+        text-align: center;
+    }
+    .Reviews .review-box .review-card i {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .Reviews .review-box .review-card .card-top img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
+    .Reviews .review-box .review-card .card p {
+        font-size: 16px; /* إضافة حجم الخط هنا */
+        margin: 5px 0;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .Reviews .review-box .review-card .review-icon i {
+        font-size: 20px;
+    }
+    .quote-box {
+        padding: 20px;
+        font-size: 18px;
+        color: #333;
+        line-height: 1.8;
+    }
+    .quote-icon {
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: -50px;
+        right: 10px;
+    }
+    .blog .blog-box {
+        grid-template-columns: 1fr;
+    }
+    .banner {
+        height: 30vh;
+        margin-bottom: 40px; 
+        position: relative;
+        z-index: 1;
+    }
+    footer .footer-main {
+        flex-direction: column;
+    }
+}
+
+/* آيباد برو (وضع عمودي) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Reviews {
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        margin-top: 40px; 
+    }
+    .Reviews h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .Reviews .review-box {
+        width: 100%;
+    }
+    .Reviews .review-box .review-card {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 8px #089da1;
+        padding: 25px;
+        text-align: center;
+    }
+    .Reviews .review-box .review-card i {
+        font-size: 65px; 
+        margin-bottom: 20px;
+    }
+    .Reviews .review-box .review-card .card-top img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 20px;
+    }
+    .Reviews .review-box .review-card .card p {
+        font-size: 18px; 
+        margin: 8px 0;
+        text-align: justify;
+        line-height: 1.6;
+    }
+    .Reviews .review-box .review-card .review-icon i {
+        font-size: 22px;
+    }
+    .quote-box {
+        padding: 25px;
+        font-size: 20px;
+        color: #333;
+        line-height: 1.9;
+    }
+    .quote-icon {
+        font-size: 60px;
+        color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: -55px;
+        right: 15px;
+    }
+    .blog .blog-box {
+        grid-template-columns: 1fr 1fr; 
+    }
+    .banner {
+        height: 35vh; 
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 1;
+    }
+    footer .footer-main {
+        flex-direction: column;
+    }
+}
